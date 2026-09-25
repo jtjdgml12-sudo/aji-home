@@ -4,74 +4,221 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>KIDS | AJI LAB</title>
+
 <style>
 *{box-sizing:border-box}
-body{margin:0;background:#fafafa;color:#222;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif}
-a{color:inherit;text-decoration:none}
-header,main,footer{max-width:1000px;margin:auto}
-header{padding:28px 24px;display:flex;justify-content:space-between}
-.logo{font-weight:800}
-.home{font-size:13px;color:#777}
-main{padding:60px 24px 100px}
-.label{font-size:13px;font-weight:700;letter-spacing:2px;color:#999}
-h1{font-size:clamp(42px,8vw,70px);line-height:1.1;margin:18px 0 20px}
-.intro{font-size:18px;line-height:1.8;color:#777;margin-bottom:60px}
-.games{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-.game{background:#fff;border:1px solid #e5e5e5;border-radius:20px;padding:30px;min-height:220px}
-.num{font-size:12px;color:#aaa;margin-bottom:28px}
-h2{font-size:24px;margin:0 0 12px}
-.game p{color:#777;line-height:1.7}
-.play{margin-top:28px;font-weight:600}
-footer{padding:30px 24px 50px;color:#aaa;font-size:13px}
-@media(max-width:700px){.games{grid-template-columns:1fr}}
+
+body{
+  margin:0;
+  background:#fafafa;
+  color:#222;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+header,main,footer{
+  max-width:1000px;
+  margin:auto;
+}
+
+header{
+  padding:28px 24px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-weight:800;
+  letter-spacing:1px;
+}
+
+.home{
+  font-size:13px;
+  color:#777;
+}
+
+main{
+  padding:60px 24px 100px;
+}
+
+.label{
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:2px;
+  color:#999;
+}
+
+h1{
+  font-size:clamp(42px,8vw,70px);
+  line-height:1.1;
+  margin:18px 0 20px;
+}
+
+.intro{
+  font-size:18px;
+  line-height:1.8;
+  color:#777;
+  margin-bottom:60px;
+}
+
+.games{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+
+.game{
+  background:#fff;
+  border:1px solid #e5e5e5;
+  border-radius:20px;
+  padding:30px;
+  min-height:230px;
+}
+
+.top{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:28px;
+}
+
+.num{
+  font-size:12px;
+  color:#aaa;
+  letter-spacing:1px;
+}
+
+.badge{
+  display:inline-block;
+  padding:5px 10px;
+  border-radius:20px;
+  background:#f1f1f1;
+  font-size:11px;
+  font-weight:700;
+  color:#555;
+}
+
+h2{
+  font-size:24px;
+  margin:0 0 12px;
+}
+
+.game p{
+  color:#777;
+  line-height:1.7;
+  margin:0;
+}
+
+.play{
+  margin-top:28px;
+  font-weight:600;
+}
+
+footer{
+  padding:30px 24px 50px;
+  color:#aaa;
+  font-size:13px;
+}
+
+@media(max-width:700px){
+  .games{
+    grid-template-columns:1fr;
+  }
+}
 </style>
 </head>
 
 <body>
+
 <header>
-<a class="logo" href="/">AJI LAB</a>
-<a class="home" href="/">HOME</a>
+  <a class="logo" href="/">AJI LAB</a>
+  <a class="home" href="/">HOME</a>
 </header>
 
 <main>
+
 <div class="label">KIDS</div>
+
 <h1>작은 손을 위한<br>작은 게임.</h1>
-<p class="intro">아이와 함께 놀기 위해 하나씩 만든 게임입니다.<br>
-누르고, 움직이고, 반응하면서 즐길 수 있어요.</p>
+
+<p class="intro">
+아이와 함께 놀기 위해 하나씩 만든 게임입니다.<br>
+누르고, 움직이고, 반응하면서 즐길 수 있어요.
+</p>
 
 <div class="games">
 
-<a class="game" href="#">
-<div class="num">GAME 01</div>
-<h2>동물 목욕탕</h2>
-<p>더러워진 동물을 깨끗하게 씻겨주는 터치 게임</p>
-<div class="play">게임하기 →</div>
+<!-- 동물 목욕탕 -->
+<a class="game"
+   href="https://yuhyun-animal-bath.ssshhhh24.chatgpt.site/"
+   target="_blank">
+
+  <div class="top">
+    <div class="num">GAME 01</div>
+    <div class="badge">27개월 추천</div>
+  </div>
+
+  <h2>동물 목욕탕</h2>
+
+  <p>
+  더러워진 동물에게 물을 뿌리고,
+  거품을 내서 깨끗하게 씻겨주는 터치 게임
+  </p>
+
+  <div class="play">게임하기 →</div>
 </a>
 
+
+<!-- 인형뽑기 -->
 <a class="game" href="#">
-<div class="num">GAME 02</div>
-<h2>인형뽑기</h2>
-<p>집게를 움직여 귀여운 인형을 뽑는 게임</p>
-<div class="play">게임하기 →</div>
+  <div class="top">
+    <div class="num">GAME 02</div>
+  </div>
+
+  <h2>인형뽑기</h2>
+  <p>집게를 움직여 귀여운 인형을 뽑아보는 간단한 게임</p>
+
+  <div class="play">준비중</div>
 </a>
 
+
+<!-- 색깔 주차장 -->
 <a class="game" href="#">
-<div class="num">GAME 03</div>
-<h2>색깔 주차장</h2>
-<p>자동차와 같은 색깔의 차고를 찾아가는 색깔 놀이</p>
-<div class="play">게임하기 →</div>
+  <div class="top">
+    <div class="num">GAME 03</div>
+  </div>
+
+  <h2>색깔 주차장</h2>
+  <p>자동차와 같은 색깔의 차고를 찾아 주차하는 색깔 놀이</p>
+
+  <div class="play">준비중</div>
 </a>
 
+
+<!-- 비누방울 -->
 <a class="game" href="#">
-<div class="num">GAME 04</div>
-<h2>비누방울 놀이</h2>
-<p>화면의 비누방울을 손가락으로 톡톡 터뜨리는 게임</p>
-<div class="play">게임하기 →</div>
+  <div class="top">
+    <div class="num">GAME 04</div>
+  </div>
+
+  <h2>비누방울 놀이</h2>
+  <p>화면에 나타나는 비누방울을 손가락으로 톡톡 터뜨리는 게임</p>
+
+  <div class="play">준비중</div>
 </a>
 
 </div>
+
 </main>
 
-<footer>© 2026 AJI LAB · 아지.kr</footer>
+<footer>
+© 2026 AJI LAB · 아지.kr
+</footer>
+
 </body>
 </html>
