@@ -21,7 +21,7 @@ header{
 nav{display:flex;gap:18px;font-size:13px;color:#666}
 .hero{
   max-width:1000px;margin:auto;
-  padding:110px 24px 90px
+  padding:110px 24px 40px
 }
 .hero h1{
   font-size:clamp(42px,8vw,76px);
@@ -60,6 +60,42 @@ footer{
   .hero{padding-top:70px}
   .grid{grid-template-columns:1fr}
 }
+
+
+/* PC 화면 너비 확장 */
+header, .hero, .grid, footer {
+  max-width: 1200px;
+}
+
+/* PC: 카드 3열 */
+.grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+/* 제목과 카드 사이 여백 축소 */
+.hero {
+  padding-bottom: 40px;
+}
+
+.hero p {
+  margin-bottom: 0;
+}
+
+/* 태블릿: 카드 2열 */
+@media (min-width: 701px) and (max-width: 1050px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* 휴대전화: 카드 1열 */
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+  
 </style>
 </head>
 
